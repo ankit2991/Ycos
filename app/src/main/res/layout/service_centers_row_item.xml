@@ -116,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Minimum Service Price:"
+                android:text="Min Service Price:"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10sdp" />
 
