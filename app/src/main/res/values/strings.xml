@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YCos Car </string>
+
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+
+
+    <string name="serviceList_price">Price</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown</string>
+    <string name="car_wash_service">car Wash Service</string>
+    <string name="jodhpur_service_center">Jodhpur Service Center</string>
+    <string name="service_provider">Service Provider</string>
+
+</resources>
