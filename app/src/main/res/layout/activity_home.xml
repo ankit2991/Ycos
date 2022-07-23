@@ -51,8 +51,8 @@
 
                     <ImageView
                         android:id="@+id/featuredRight_img"
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="@dimen/_10sdp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="@dimen/_7sdp"
@@ -81,8 +81,8 @@
 
                     <ImageView
                         android:id="@+id/popularRight_img"
-                        android:layout_width="12dp"
-                        android:layout_height="10dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="11dp"

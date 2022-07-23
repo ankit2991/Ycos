@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/drawable/detail_bg.xml" value="0.177" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/drawable/ic_gmail.xml" value="0.177" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/drawable/ic_phone.xml" value="0.177" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/drawable/ic_placeholder.xml" value="0.177" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_about_us.xml" value="0.22" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_cart_details.xml" value="0.33" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_main2.xml" value="0.16822916666666668" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_order_details.xml" value="0.25" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_rate_us.xml" value="0.25" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/activity_vendor_detail.xml" value="0.22" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/carmodel.xml" value="0.16822916666666668" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/cartype.xml" value="0.16822916666666668" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/center_row_item.xml" value="0.5" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/dialogbox_row_item.xml" value="0.16822916666666668" />
+        <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/dialogboxcarmodel_row_item.xml" value="0.16822916666666668" />
         <entry key="..\:/Android Development/Ycos/app/src/main/res/layout/service_centers_row_item.xml" value="0.33" />
         <entry key="..\:/Users/dashr/AndroidStudioProjects/CarWash2/app/src/main/res/drawable/background_bg.xml" value="0.177" />
         <entry key="..\:/Users/dashr/AndroidStudioProjects/CarWash2/app/src/main/res/drawable/btn_background.xml" value="0.177" />

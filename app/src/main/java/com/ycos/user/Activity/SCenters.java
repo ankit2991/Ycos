@@ -39,13 +39,13 @@ public class SCenters extends AppCompatActivity {
         dataHolder = new ArrayList<>();
 
         SCenterModel SerMod1 = new SCenterModel(R.drawable.ic_logo, R.drawable.ic_eye,
-                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "1000");
+                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "\u20B9 1000");
         dataHolder.add(SerMod1);
         SCenterModel SerMod2 = new SCenterModel(R.drawable.ic_logo, R.drawable.ic_eye,
-                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "1000");
+                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "\u20B9 1000");
         dataHolder.add(SerMod2);
         SCenterModel SerMod3 = new SCenterModel(R.drawable.ic_logo, R.drawable.ic_eye,
-                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "1000");
+                R.drawable.ic_location, "Jodhpur Car Services", "Ratanada , Jodhpur", "\u20B9 1000");
         dataHolder.add(SerMod3);
 
         SCenterRecyclerview.setAdapter(new SCenterAdapter(dataHolder, this));

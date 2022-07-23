@@ -94,7 +94,7 @@ public class Home extends AppCompatActivity {
         aboutUS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, MyProfile.class);
+                Intent intent = new Intent(Home.this, AboutUs.class);
                 startActivity(intent);
             }
         });
@@ -102,7 +102,7 @@ public class Home extends AppCompatActivity {
         contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, MyProfile.class);
+                Intent intent = new Intent(Home.this, RateUs.class);
                 startActivity(intent);
             }
         });
@@ -126,7 +126,7 @@ public class Home extends AppCompatActivity {
         rateUS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, MyProfile.class);
+                Intent intent = new Intent(Home.this, RateUs.class);
                 startActivity(intent);
             }
         });

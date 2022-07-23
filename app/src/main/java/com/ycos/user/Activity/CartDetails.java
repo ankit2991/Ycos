@@ -17,7 +17,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import com.ycos.user.Adapter.CarModelAdapter;
 import com.ycos.user.Adapter.CarTypeAdapter;
+import com.ycos.user.Model.CarModelModel;
 import com.ycos.user.Model.CarTypeModel;
 import com.ycos.user.R;
 import com.ycos.user.Utility.RecyclerViewClickListener;
@@ -40,8 +42,13 @@ public class CartDetails extends AppCompatActivity {
     TextView pr_header;
 
     TextView tv_car_type;
+    TextView tv_car_model;
+
     private RecyclerView carTypeRecyclerview;
     ArrayList<CarTypeModel> carTypeModelArrayList;
+
+    private RecyclerView carModelRecyclerview;
+    ArrayList<CarModelModel> carModelModelArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,12 +112,33 @@ public class CartDetails extends AppCompatActivity {
         carTypeModelArrayList.add(carMod4);
 
 
+        //initialize dataHolder for carModel recyclerview
+        carModelModelArrayList = new ArrayList<>();
+
+        CarModelModel carMMod1 = new CarModelModel("Thar 4*4");
+        carModelModelArrayList.add(carMMod1);
+        CarModelModel carMMod2 = new CarModelModel("Mahindra x");
+        carModelModelArrayList.add(carMMod2);
+        CarModelModel carMMod3 = new CarModelModel("Suzuki V454");
+        carModelModelArrayList.add(carMMod3);
+        CarModelModel carMMod4 = new CarModelModel("MG M4555");
+        carModelModelArrayList.add(carMMod4);
+
         //Dialog Box
         tv_car_type = findViewById(R.id.tv_car_type);
         tv_car_type.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 carTypeDialog();
+            }
+        });
+
+        //Dialog Box
+        tv_car_model = findViewById(R.id.tv_car_model);
+        tv_car_model.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                carModelDialog();
             }
         });
 
@@ -125,7 +153,7 @@ public class CartDetails extends AppCompatActivity {
         });
 
         pr_header = findViewById(R.id.pr_header);
-        pr_header.setText("Cart Details");
+        pr_header.setText("Car Details");
     }
 
     public void carTypeDialog() {
@@ -152,4 +180,30 @@ public class CartDetails extends AppCompatActivity {
 
         dialog.show();
     }
+
+    public void carModelDialog() {
+        final Dialog dialog = new Dialog(CartDetails.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.carmodel);
+
+        //carModel recyclerview
+        carModelRecyclerview = dialog.findViewById(R.id.carModel_recyclerview);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+        carModelRecyclerview.setLayoutManager(gridLayoutManager);
+
+
+        carModelRecyclerview.setAdapter(new CarModelAdapter(new RecyclerViewClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                tv_car_model.setText(carModelModelArrayList.get(position).getTitle());
+                dialog.dismiss();
+            }
+        }, CartDetails.this, carModelModelArrayList));
+
+
+        dialog.show();
+    }
+
 }

@@ -45,6 +45,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tv_car_model"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_5sdp"

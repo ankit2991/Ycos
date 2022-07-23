@@ -1,6 +1,7 @@
 package com.ycos.user.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ycos.user.Activity.SCenters;
+import com.ycos.user.Activity.VendorDetail;
 import com.ycos.user.Model.SCenterModel;
 import com.ycos.user.Model.ServiceCentersModel;
 import com.ycos.user.R;
@@ -40,6 +43,15 @@ public class SCenterAdapter extends RecyclerView.Adapter<SCenterAdapter.sCenterV
         holder.sCenterName_txt.setText(DataHolder.get(position).getTitle1());
         holder.sCenterAddress_txt.setText(DataHolder.get(position).getTitle2());
         holder.sCenterPrice_txt.setText(DataHolder.get(position).getTitle3());
+
+        holder.sCenterDetails_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, VendorDetail.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

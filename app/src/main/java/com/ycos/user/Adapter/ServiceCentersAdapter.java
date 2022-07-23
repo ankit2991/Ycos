@@ -1,6 +1,7 @@
 package com.ycos.user.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ycos.user.Activity.SCenters;
+import com.ycos.user.Activity.ServiceDetail;
 import com.ycos.user.Model.FeaturedModel;
 import com.ycos.user.Model.ServiceCentersModel;
 import com.ycos.user.R;
@@ -39,6 +42,15 @@ public class ServiceCentersAdapter extends RecyclerView.Adapter<ServiceCentersAd
         holder.location_img.setImageResource(DataHolder.get(position).getImage3());
         holder.popular_txt.setText(DataHolder.get(position).getTitle1());
         holder.price_txt.setText(DataHolder.get(position).getTitle2());
+
+        holder.details_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, SCenters.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
